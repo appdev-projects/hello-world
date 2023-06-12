@@ -11,6 +11,6 @@ describe "The home page" do
     visit "/"
 
     expect { find("h1", :text => /Hello, world!/i) }.to_not raise_error,
-      "Expected page to have an <h1> with the text 'Hello, world!', but didn't find one."
+      "Expected page to have an h1 element with the text 'Hello, world!', but didn't find one."
   end
 end
