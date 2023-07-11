@@ -9,13 +9,7 @@
   // "features": {},
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [3000],
-
-  "portsAttributes": {
-    "3000": {
-      "label": "Application"
-    }
-  },
+  "forwardPorts": [3000, 4567, 9292],
 
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "bin/setup",
