@@ -2,5 +2,4 @@
 
 puts "== Installing dependencies =="
 `bundle install`
-`gem install rufo`
 puts "\n== Initial setup complete =="
