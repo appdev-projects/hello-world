@@ -1,3 +1,3 @@
-# HTML-Template
+# hello-world
 
-Use this template to create static HTML websites that you want to host on GitHub pages.
+[See here for more information](https://learn.firstdraft.com/lessons/106).
