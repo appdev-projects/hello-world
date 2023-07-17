@@ -1,20 +1,18 @@
-require './app'
+require "./app"
 
 configure do
   # GitHub pages deployment
-  set(:public_folder, './')
+  set(:public_folder, "./")
 
   # To open .html.erb files, need to register them
-  Tilt.register(Tilt::ERBTemplate, 'html.erb')
+  Tilt.register(Tilt::ERBTemplate, "html.erb")
 end
 
 configure :development do
-  require "sinatra/reloader"
-
   # we would also like a nicer error page in development
-  require 'better_errors'
-  require 'binding_of_caller'
-  
+  require "better_errors"
+  require "binding_of_caller"
+
   # need this configure for better errors
   use(BetterErrors::Middleware)
   BetterErrors.application_root = __dir__
