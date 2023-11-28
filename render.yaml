@@ -1,4 +1,5 @@
-the name of this service, eg hello-world
+Al link and bio
+ eg hello-world
     env: ruby # this app is written in ruby
     plan: free #f make sure to set this to free or you'll get billed $$$
     buildCommand: "./bin/render-build.sh" # we already created these two files for you
