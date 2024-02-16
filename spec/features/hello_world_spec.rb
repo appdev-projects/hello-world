@@ -6,7 +6,7 @@ describe "The home page" do
   end
 end
 
-describe "<h1> Hello world!<\h1>" do
+describe "<h1> 'Hello world!'<\h1>" do
   it "has a heading with the text 'Hello, world!'", points: 1, hint: h("copy_must_match") do
     visit "/"
 
