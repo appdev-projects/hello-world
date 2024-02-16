@@ -1,4 +1,4 @@
-describe "The home page" do
+describe 'Hello world!' do
   it "renders an HTML page", points: 1 do
     visit "/"
 
@@ -6,8 +6,8 @@ describe "The home page" do
   end
 end
 
-describe "The home page" do
-  it "has a heading with the text 'Hello, world!'", points: 1, hint: h("copy_must_match") do
+describe "Hello world!" do
+o  it "has a heading with the text 'Hello, world!'", points: 1, hint: h("copy_must_match") do
     visit "/"
 
     expect { find("h1", :text => /Hello,\s+world!/i) }.to_not raise_error,
