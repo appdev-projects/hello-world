@@ -1,6 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (7.0.8)
+      activesupport (= 7.0.8)
+    activerecord (7.0.8)
+      activemodel (= 7.0.8)
+      activesupport (= 7.0.8)
     activesupport (7.0.8)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
@@ -8,6 +13,8 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
+    appdev_support (0.2.1)
+      tabulo
     base64 (0.1.1)
     better_errors (2.9.1)
       coderay (>= 1.0.0)
@@ -114,6 +121,9 @@ GEM
       rack (~> 2.2, >= 2.2.4)
       rack-protection (= 3.0.6)
       tilt (~> 2.0)
+    sinatra-activerecord (2.0.27)
+      activerecord (>= 4.1)
+      sinatra (>= 1.0)
     sinatra-contrib (3.0.6)
       multi_json
       mustermann (~> 3.0)
@@ -122,9 +132,15 @@ GEM
       tilt (~> 2.0)
     sqlite3 (1.6.8-x86_64-darwin)
     sqlite3 (1.6.8-x86_64-linux)
+    table_print (1.5.7)
+    tabulo (2.8.2)
+      tty-screen (= 0.8.1)
+      unicode-display_width (~> 2.2)
     tilt (2.1.0)
+    tty-screen (0.8.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    unicode-display_width (2.4.2)
     webdrivers (5.2.0)
       nokogiri (~> 1.6)
       rubyzip (>= 1.3.0)
@@ -142,6 +158,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  appdev_support
   better_errors
   binding_of_caller
   capybara
@@ -153,8 +170,10 @@ DEPENDENCIES
   rspec
   rspec-html-matchers
   sinatra
+  sinatra-activerecord
   sinatra-contrib
   sqlite3 (~> 1.4)
+  table_print
   webdrivers
   webmock
 
