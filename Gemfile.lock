@@ -44,18 +44,19 @@ GEM
       color_namer
       rspec
     erubi (1.12.0)
-    faraday (2.10.0)
+    faraday (2.10.1)
       faraday-net_http (>= 2.0, < 3.2)
       logger
     faraday-net_http (3.1.1)
       net-http
     faraday-retry (1.0.3)
-    grade_runner (0.0.11)
+    grade_runner (0.0.12)
       activesupport (>= 2.3.5)
       faraday-retry (~> 1.0.3)
       octokit (~> 5.0)
       oj (~> 3.13.12)
       rake (~> 13)
+      zip
     hashdiff (1.0.1)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
@@ -155,6 +156,7 @@ GEM
     websocket (1.2.10)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    zip (2.0.2)
 
 PLATFORMS
   x86_64-darwin-22
@@ -166,7 +168,7 @@ DEPENDENCIES
   binding_of_caller
   capybara
   draft_matchers
-  grade_runner
+  grade_runner (= 0.0.12)
   i18n
   pry
   puma (~> 5.0)
