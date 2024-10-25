@@ -12,6 +12,9 @@ gem "puma", "~> 5.0"
 # use active record
 gem "sinatra-activerecord"
 
+gem "http"
+gem "dotenv"
+
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
