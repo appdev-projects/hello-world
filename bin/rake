@@ -2,6 +2,7 @@
 require "rubygems"
 require "bundler/setup"
 require "rake"
+require "grade_runner"
 
 dir = Gem::Specification.find_by_name("grade_runner").gem_dir
 
